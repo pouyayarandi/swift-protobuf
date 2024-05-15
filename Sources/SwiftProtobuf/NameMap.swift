@@ -281,9 +281,7 @@ public struct _NameMap: ExpressibleByDictionaryLiteral {
   
   /// Returns all proto names
   internal var names: [Name] {
-    protoToNumberMap.map {
-      $0.key
-    }
+    protoToNumberMap.map(\.key)
   }
 }
 
