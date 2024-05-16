@@ -5,9 +5,9 @@ name: Build and Test
 
 on:
   push:
-    branches: [ * ]
+    branches: [ tmp-add-proto-reflection ]
   pull_request:
-    branches: [ * ]
+    branches: [ tmp-add-proto-reflection ]
 
 jobs:
   core:
