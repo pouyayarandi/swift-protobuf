@@ -112,7 +112,7 @@ jobs:
   api-breakage-vs-main:
     name: Api Breakage Compared to main Branch
     # Only on pull requests
-    if: github.event_name == 'pull_request'
+    # if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     # Don't fail since we're actively revisit breaking changes on `main`
     continue-on-error: true
@@ -132,7 +132,7 @@ jobs:
   api-breakage-since-last-release:
     name: Api Breakage Compared to Last Release
     # Only on pull requests
-    if: github.event_name == 'pull_request'
+    # if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     # Don't fail since we're actively revisit breaking changes on `main`
     continue-on-error: true
